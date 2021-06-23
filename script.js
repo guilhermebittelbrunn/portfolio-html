@@ -1,14 +1,22 @@
 // Contato menu
 let ghost = document.getElementById('ghost')
+let main = document.getElementsByTagName('main')[0]
 
 var ghost_disable = () =>{
+    document.body.style.backgroundColor = "whitesmoke"
+    main.style.display = "block";
     ghost.style.display = "none";
+    
 }
-var ghost_enable = () =>{ghost.style.display = "block";}
+var ghost_enable = () =>{
+    document.body.style.backgroundColor = "#222f3e"
+    main.style.display = "none";
+    ghost.style.display = "block";}
 
 
 function show_ghost(){
     document.body.style.overflow = "hidden"
+    document.body.style.backgroundColor = "#222f3e"
     ghost_enable()
 }
 function hidden_ghost(){

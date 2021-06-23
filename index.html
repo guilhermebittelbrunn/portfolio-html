@@ -8,113 +8,114 @@
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
-    <link rel="manifest" href="icon/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    <link rel="manifest" href="/icon/site.webmanifest">
     <title>Portifólio</title>
 </head>
 <body>
-    <!-- Navegation bar -->
-    <div id="nav_container">
-        <nav class="nav">
-            <h1>logo</h1>
+    <main>
+        <!-- Navegation bar -->
+        <div id="nav_container">
+            <nav class="nav">
+                <h1>logo</h1>
+                <ul>
+                    <li><a href="#header">Início</a></li>
+                    <li><a href="#portifolio">Portifólio</a></li>
+                    <li><a href="#header" onclick="show_ghost()">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Header -->
+        <header id="header">
+            <h1>Guilherme Bittelbrunn</h1>
+            <h2>Desevolvedor Front-end</h2>
+            <div id="btns">
+                <div class="btn">
+                    <a href="#"><p>Contate-me</p></a>
+                </div>
+                <div class="btn">
+                    <a href="#"><p>Download cv</p></a> 
+                </div>
+            </div>
+        </header>
+        <!-- Sobre -->
+        <section id="sobre" class="center">
+                <h1 class="title">Sobre mim</h1>
+                <div id="container_sobre">
+                    <img src="images/me.jpg" alt="me">
+                    <div id="text">
+                        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio esse consequuntur quae architecto reprehenderit Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatem sapiente</p>
+                        <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sequi eaque totam modi rerum perferendis porro sit tempora fuga adipisci error Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatem sapiente</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portifólio -->
+
+        <section id="portifolio">
+            <h1 class="title">Portifólio</h1>
+            <div class="center">
+                <div class="container_portifolio">
+                    <div class="square">
+                        <img src="images/jogo da memoria.JPG" alt="#">
+                        <div id="legenda">
+                            <h3>Jogo da memória</h3>
+                            <a href="#">Veja mais</a>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <img src="images/jogo da memoria.JPG" alt="#">
+                        <div id="legenda">
+                            <h3>Jogo da velha</h3>
+                            <a href="#">Veja mais</a>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <img src="images/jogo da memoria.JPG" alt="#">
+                        <div id="legenda">
+                            <h3>Formulário</h3>
+                            <a href="#">Veja mais</a>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <img src="images/jogo da memoria.JPG" alt="#">
+                        <div id="legenda">
+                            <h3>Cartão de visita</h3>
+                            <a href="#">Veja mais</a>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <img src="images/jogo da memoria.JPG" alt="#">
+                        <div id="legenda">
+                            <h3>Jogo da memória</h3>
+                            <a href="#">Veja mais</a>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <img src="images/jogo da memoria.JPG" alt="#">
+                        <div id="legenda">
+                            <h3>Jogo da memória</h3>
+                            <a href="#">Veja mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contato -->
+
+        <footer>
+            <div id="info">
+                <p>©Guilherme Bittelbrunn</p>
+                <p>Telefone: (xx) xxxx-xxxx</p>
+                <p>email: guilherme.bitte@unifebe.edu.br</p>
+            </div>
             <ul>
-                <li><a href="#header">Início</a></li>
-                <li><a href="#portifolio">Portifólio</a></li>
-                <li><a href="#header" onclick="show_ghost()">Contato</a></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
             </ul>
-        </nav>
-    </div>
-    <!-- Header -->
-    <header id="header">
-        <h1>Guilherme Bittelbrunn</h1>
-        <h2>Desevolvedor Front-end</h2>
-        <div id="btns">
-            <div class="btn">
-                <a href="#"><p>Contate-me</p></a>
-            </div>
-            <div class="btn">
-                <a href="#"><p>Download cv</p></a> 
-            </div>
-        </div>
-    </header>
-    <!-- Sobre -->
-    <section id="sobre" class="center">
-            <h1 class="title">Sobre mim</h1>
-            <div id="container_sobre">
-                <img src="images/me.jpg" alt="me">
-                <div id="text">
-                    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio esse consequuntur quae architecto reprehenderit Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatem sapiente</p>
-                    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sequi eaque totam modi rerum perferendis porro sit tempora fuga adipisci error Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatem sapiente</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Portifólio -->
-
-    <section id="portifolio">
-        <h1 class="title">Portifólio</h1>
-        <div class="center">
-            <div class="container_portifolio">
-                <div class="square">
-                    <img src="images/jogo da memoria.JPG" alt="#">
-                    <div id="legenda">
-                        <h3>Jogo da memória</h3>
-                        <a href="#">Veja mais</a>
-                    </div>
-                </div>
-                <div class="square">
-                    <img src="images/jogo da memoria.JPG" alt="#">
-                    <div id="legenda">
-                        <h3>Jogo da velha</h3>
-                        <a href="#">Veja mais</a>
-                    </div>
-                </div>
-                <div class="square">
-                    <img src="images/jogo da memoria.JPG" alt="#">
-                    <div id="legenda">
-                        <h3>Formulário</h3>
-                        <a href="#">Veja mais</a>
-                    </div>
-                </div>
-                <div class="square">
-                    <img src="images/jogo da memoria.JPG" alt="#">
-                    <div id="legenda">
-                        <h3>Cartão de visita</h3>
-                        <a href="#">Veja mais</a>
-                    </div>
-                </div>
-                <div class="square">
-                    <img src="images/jogo da memoria.JPG" alt="#">
-                    <div id="legenda">
-                        <h3>Jogo da memória</h3>
-                        <a href="#">Veja mais</a>
-                    </div>
-                </div>
-                <div class="square">
-                    <img src="images/jogo da memoria.JPG" alt="#">
-                    <div id="legenda">
-                        <h3>Jogo da memória</h3>
-                        <a href="#">Veja mais</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contato -->
-
-    <footer>
-        <div id="info">
-            <p>©Guilherme Bittelbrunn</p>
-            <p>Telefone: (xx) xxxx-xxxx</p>
-            <p>email: guilherme.bitte@unifebe.edu.br</p>
-        </div>
-        <ul>
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-github"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-        </ul>
-    </footer>
-
+        </footer>
+    </main>
     <!-- ghost contato -->
     <div id="ghost">
         <div id="button" onclick="hidden_ghost()">X</div>
