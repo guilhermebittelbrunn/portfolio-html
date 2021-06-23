@@ -281,7 +281,7 @@ footer a:hover{
     padding: 20px 0px;
     color: white;
     height: 100px;
-    width: 90%;
+    width: 100%;
     margin: 20px auto;
     font-size: 2.0rem;
     border-radius: 10px;
@@ -320,6 +320,7 @@ footer a:hover{
 #instagram{background-color: #E1306C;}
 #linkedin{background-color: #0e76a8;}
 #email{background-color: #db4a39;}
+#github{background-color: #0e0e0e;}
 /* Key frames */
 
 @keyframes show{
@@ -370,5 +371,9 @@ footer a:hover{
     }
     .btn a{
         width: 200px;
+    }
+    #ghost{
+        padding: 0px;
+        top: 60%;
     }
 }
