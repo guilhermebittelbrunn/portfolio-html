@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
     <title>Portifólio</title>
 </head>
 <body>
@@ -19,8 +19,8 @@
             <h1>logo</h1>
             <ul>
                 <li><a href="#header">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#portifolio">Portifólio</a></li>
+                <li><a href="#header" onclick="show_ghost()">Contato</a></li>
             </ul>
         </nav>
     </div>
@@ -55,12 +55,48 @@
         <h1 class="title">Portifólio</h1>
         <div class="center">
             <div class="container_portifolio">
-                <div class="square"><img src="../images/jogo da memoria.JPG" alt="#"><h3>Jogo da memória</h3></div>
-                <div class="square"><img src="../images/jogo da memoria.JPG" alt="#"><h3>Jogo da memória</h3></div>
-                <div class="square"><img src="../images/jogo da memoria.JPG" alt="#"><h3>Jogo da memória</h3></div>
-                <div class="square"><img src="../images/jogo da memoria.JPG" alt="#"><h3>Jogo da memória</h3></div>
-                <div class="square"><img src="../images/jogo da memoria.JPG" alt="#"><h3>Jogo da memória</h3></div>
-                <div class="square"><img src="../images/jogo da memoria.JPG" alt="#"><h3>Jogo da memória</h3></div>
+                <div class="square">
+                    <img src="../images/jogo da memoria.JPG" alt="#">
+                    <div id="legenda">
+                        <h3>Jogo da memória</h3>
+                        <a href="#">Veja mais</a>
+                    </div>
+                </div>
+                <div class="square">
+                    <img src="../images/jogo da memoria.JPG" alt="#">
+                    <div id="legenda">
+                        <h3>Jogo da memória</h3>
+                        <a href="#">Veja mais</a>
+                    </div>
+                </div>
+                <div class="square">
+                    <img src="../images/jogo da memoria.JPG" alt="#">
+                    <div id="legenda">
+                        <h3>Jogo da memória</h3>
+                        <a href="#">Veja mais</a>
+                    </div>
+                </div>
+                <div class="square">
+                    <img src="../images/jogo da memoria.JPG" alt="#">
+                    <div id="legenda">
+                        <h3>Jogo da memória</h3>
+                        <a href="#">Veja mais</a>
+                    </div>
+                </div>
+                <div class="square">
+                    <img src="../images/jogo da memoria.JPG" alt="#">
+                    <div id="legenda">
+                        <h3>Jogo da memória</h3>
+                        <a href="#">Veja mais</a>
+                    </div>
+                </div>
+                <div class="square">
+                    <img src="../images/jogo da memoria.JPG" alt="#">
+                    <div id="legenda">
+                        <h3>Jogo da memória</h3>
+                        <a href="#">Veja mais</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -75,8 +111,26 @@
         <ul>
             <li><a href="#"><i class="fab fa-facebook"></i></a></li>
             <li><a href="#"><i class="fab fa-github"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
         </ul>
     </footer>
+
+    <!-- ghost contato -->
+    <div id="ghost">
+        <div id="button" onclick="hidden_ghost()">X</div>
+        <div id="ghost_header">
+            <h2>Guilherme Bittelbrunn</h2>
+            <h3>Brusque - Santa Catarina</h3>
+        </div>
+        <div id="ghost_links">
+            <ul>
+                <li><a href="#" id="facebook"><i class="fab fa-facebook"></i>Facebook</a></li>
+                <li><a href="#" id="instagram"><i class="fab fa-instagram"></i>Instagram</a></li>
+                <li><a href="#" id="linkedin"><i class="fab fa-linkedin-in"></i>Linkedin</a></li>
+                <li><a href="#" id="email"><i class="far fa-envelope"></i>Email</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

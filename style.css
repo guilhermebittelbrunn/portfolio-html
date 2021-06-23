@@ -67,7 +67,7 @@ nav a{
 }
 nav a:hover{
     transition: .4s;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 /* Header */
 
@@ -174,6 +174,7 @@ header h1{
     gap: 20px;
 }
 .square{
+    position: relative;
     display: grid;
 }
 .square img{
@@ -184,14 +185,36 @@ header h1{
     grid-column: 1;
     grid-row: 1/3;
 }
-.square h3{
+.square #legenda{
+    width: 100%;
     text-align: center;
     padding: 15px 0px;
     color: var(--second-color);
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .7);
     grid-column: 1;
     grid-row: 2/3;
     font-size: 2.0rem;
+}
+.square a{
+    width: 60%;
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 700;
+    background-color: var(--first-color);
+    padding: 10px 20px;
+    border: 3px solid var(--first-color);
+}
+.square a:hover{
+    transition: .4s;
+    color: var(--first-color);
+    background-color: whitesmoke;
+    border-color: var(--first-color);
 }
 /* Footer */
 
@@ -210,7 +233,7 @@ footer ul{
    gap: 20px;
    list-style: none;
 }
-i{
+footer i{
     font-size: 2.0rem;
     color:black;
 }
@@ -223,6 +246,91 @@ footer a:hover{
     background-color: var(--first-color);
     transition: .4s;
 }
+#ghost{
+    max-width: 500px;
+    animation: show .4s linear forwards;
+    display: none;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px 20px;
+    width: 80%;
+    background-color: #161e27;
+    text-align: center;
+    border: 2px solid rgb(27, 27, 27);
+    transition: all 1s;
+}
+#ghost #button{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    border-radius: 50%;
+}
+#ghost_header{
+    padding: 20px 0px;
+    color: white;
+    height: 100px;
+    width: 90%;
+    margin: 20px auto;
+    font-size: 2.0rem;
+    border-radius: 10px;
+}
+#ghost img{
+    float: left;
+    width: 80px;
+    border-radius: 50%;
+}
+#ghost ul{
+    margin: 20px;
+    list-style: none;
+}
+#ghost a{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 10px auto;
+    padding: 20px;
+    border: 3px solid black;
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    width: 100%;
+}
+#ghost a:hover{
+    transition: .4s;
+    background-color: var(--first-color);
+}
+#ghost i{
+    font-size: 2.0rem;
+    padding-right: 10px;
+}
+#facebook{background-color: #3b5998;}
+#instagram{background-color: #E1306C;}
+#linkedin{background-color: #0e76a8;}
+#email{background-color: #db4a39;}
+/* Key frames */
+
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: .95;
+    }
+}
+
 /* Media screen */
 
 @media screen and (max-width: 768px){
@@ -252,10 +360,13 @@ footer a:hover{
         justify-items: center;
     }
 }
-@media screen and (max-width: 410px){
+@media screen and (max-width: 425px){
     #btns{
         flex-direction: column;
         gap: 10px;
+    }
+    #container_sobre img{
+        width: 180px;
     }
     .btn a{
         width: 200px;
