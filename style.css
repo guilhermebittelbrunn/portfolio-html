@@ -15,7 +15,7 @@ html{
 }
 body{
     font-size: 1.6rem;
-    background-color: whitesmoke;
+    background-color: var(--second-color);
 }
 .center{
     margin: auto;
@@ -23,6 +23,12 @@ body{
     padding: 0px 2%;
 }
 .title{
+    display: block;
+    width: 140px;
+    margin: 0px auto 40px auto;
+    padding: 3px;
+    border-bottom: 5px solid var(--first-color);
+    text-align: center;
     font-size: 2.2rem;
 }
 /* Navegation bar */
@@ -46,7 +52,7 @@ nav{
 }
 nav h1{
     font-size: 2.4rem;
-    color: whitesmoke;
+    color: var(--second-color);
 }
 nav ul{
     list-style: none;
@@ -56,7 +62,7 @@ nav ul{
 nav a{
     font-size: 2.2rem;
     text-decoration: none;
-    color: white;
+    color: var(--second-color);
     padding: 15px 10px;
 }
 nav a:hover{
@@ -67,7 +73,7 @@ nav a:hover{
 
 header{
     text-align: center;
-    color: white;
+    color: var(--second-color);
     min-height: 500px;
     background-color: var(--first-color);
     display: flex;
@@ -81,7 +87,7 @@ header h1{
 #btns{
     margin-top: 30px;
     display: flex;
-    gap: 50px;   
+    gap: 30px;   
 }
 .btn a{
     font-size: 1.8rem;
@@ -91,7 +97,7 @@ header h1{
     text-align: center;
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: var(--second-color);
     width: 150px;
     padding: 10px 15px;
     font-weight: 700;
@@ -100,7 +106,7 @@ header h1{
 }
 .btn a:hover{
     display: flex;
-    color: white;
+    color: var(--second-color);
     border-color: var(--second-color);
 }
 .btn p{
@@ -128,12 +134,7 @@ header h1{
     min-height: 500px;
 }
 #sobre h1{
-    display: block;
-    width: 140px;
-    margin: 0px auto 40px auto;
-    padding: 3px;
     border-bottom: 5px solid var(--first-color);
-    text-align: center;
 }
 #container_sobre{
     display: flex;
@@ -162,12 +163,8 @@ header h1{
     background-color: var(--first-color);
 }
 #portifolio h1{
-    color: white;
-    display: block;
-    width: 140px;
-    border-bottom: 5px solid whitesmoke;
-    margin: 0px auto 40px auto;
-    text-align: center;
+    color: var(--second-color);
+    border-bottom: 5px solid var(--second-color);
 }
 .container_portifolio{
     align-items: center;    
@@ -190,7 +187,7 @@ header h1{
 .square h3{
     text-align: center;
     padding: 15px 0px;
-    color: white;
+    color: var(--second-color);
     background-color: rgba(0, 0, 0, .6);
     grid-column: 1;
     grid-row: 2/3;
@@ -199,7 +196,7 @@ header h1{
 /* Footer */
 
 footer{
-    color: whitesmoke;
+    color: var(--second-color);
     justify-content: space-around;
     align-items: center;
     display: flex;
@@ -238,18 +235,17 @@ footer a:hover{
         flex-direction: column;
     }
     #container_sobre img{
-        border-radius: 50%;
         width: 240px;
     }
     #container_portifolio{
         flex-direction: column;
     }
     .square img{
-        width: 90%;
-        height: 220px;
+        width: 100%;
+        height: 30vh;
     }
     .square h3{
-        width: 90%;
+        width: 100%;
     }
     .square{
         width: 80%;
