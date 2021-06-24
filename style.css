@@ -18,7 +18,6 @@ body{
     background-color: var(--second-color);
 }
 main{
-    animation: show .4s linear forwards;
     display: block;
 }
 .center{
