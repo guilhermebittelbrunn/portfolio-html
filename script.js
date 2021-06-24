@@ -46,3 +46,20 @@ function hidden_square(){
     link.children[0].style.marginTop = "0px"
     link.children[1].style.display = "none"
  }
+
+ // Menu toggle
+
+ var show = true
+ var menu = document.querySelector('.menu_section')
+ var btn = document.querySelector('.toggle')
+ var ul = document.getElementById('ul_menu')
+ btn.addEventListener('click', () =>{
+    menu.classList.toggle('on', show)
+    show = !show
+ })
+for (var li = 0; li < ul.children.length; li++){
+    ul.children[li].addEventListener('click', () =>{
+        menu.setAttribute('class', "menu_section")
+        show = !show
+    })
+}
