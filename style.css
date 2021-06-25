@@ -47,7 +47,6 @@ nav{
     margin: auto;
     display: flex;
     height: 60px;
-    width: 100%;
     max-width: 1100px;
     justify-content: space-between;
     align-items: center;
@@ -153,9 +152,6 @@ header h1{
     width: 250px;
     border-radius: 50%;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, .45);
-}
-#sobre img:hover{
-    animation: hover 1s linear forwards;
 }
 #text{
     margin-top: 20px;
