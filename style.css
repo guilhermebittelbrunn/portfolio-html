@@ -280,7 +280,7 @@ footer a:hover{
 #ghost{
     display: none;
     max-width: 500px;
-    animation: show .65s ease alternate;
+    animation: show .65s ease forward;
     z-index: 100;
     position: absolute;
     left: 50%;
@@ -291,8 +291,6 @@ footer a:hover{
     background-color: #161e27;
     text-align: center;
     border: 2px solid rgb(27, 27, 27);
-    transition: all 1s;
-    color: var(--second-color);
 }
 #ghost #button{
     width: 30px;
