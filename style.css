@@ -277,22 +277,26 @@ footer a:hover{
     background-color: var(--first-color);
     transition: .4s;
 }
-#ghost{
+.ghost{
+    color: var(--second-color);
     display: none;
     max-width: 500px;
-    animation: show .65s ease;
+    animation: show .6s ease;
     z-index: 100;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    bottom: 50%;
+    transform: translate(-50%, 50%);
     padding: 30px 20px;
     width: 90%;
     background-color: #161e27;
     text-align: center;
     border: 2px solid rgb(27, 27, 27);
 }
-#ghost #button{
+.ghost.off{
+    animation: desaparecer 0.6s ease forwards;
+}
+.ghost #button{
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -307,7 +311,7 @@ footer a:hover{
     top: 10px;
     border-radius: 50%;
 }
-#ghost_header{
+.ghost_header{
     padding: 20px 0px;
     color: white;
     height: 100px;
@@ -316,16 +320,16 @@ footer a:hover{
     font-size: 2.0rem;
     border-radius: 10px;
 }
-#ghost img{
+.ghost img{
     float: left;
     width: 80px;
     border-radius: 50%;
 }
-#ghost ul{
+.ghost ul{
     margin: 20px;
     list-style: none;
 }
-#ghost a{
+.ghost a{
     font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -338,11 +342,11 @@ footer a:hover{
     border-radius: 50px;
     width: 100%;
 }
-#ghost a:hover{
+#ghost_links a:hover{
     transition: .4s;
-    background-color: var(--first-color);
+    background-color: black;
 }
-#ghost i{
+.ghost i{
     font-size: 2.0rem;
     padding-right: 10px;
 }
@@ -359,11 +363,11 @@ footer a:hover{
         opacity: 0;
     }
     50%{
-        transform: translate(-50%,-50%) scale(.7)
+        transform: translate(-50%,50%) scale(.7)
     }
     100%{
         opacity: 1;
-        transform: translate(-50%,-50%) scale(1)
+        transform: translate(-50%,50%) scale(1)
     }
 }
 @keyframes up{
@@ -382,5 +386,17 @@ footer a:hover{
     100%{
         opacity: 1;
         transform: translateY(-30px)
+    }
+}
+@keyframes desaparecer{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        transform: translate(-50%,50%) scale(.7)
+    }
+    100%{
+        opacity: 0;
+        transform: translate(50%, -50%) scale(.5)
     }
 }

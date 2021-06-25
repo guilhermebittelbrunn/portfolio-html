@@ -1,6 +1,7 @@
 // Contato menu
-let ghost = document.getElementById('ghost')
+let ghost = document.getElementsByClassName('ghost')[0]
 let main = document.getElementsByTagName('main')[0]
+let teste = false
 
 var ghost_disable = () =>{
     document.body.style.backgroundColor = "whitesmoke"
@@ -12,16 +13,22 @@ var ghost_enable = () =>{
     main.style.display = "none";
     ghost.style.display = "block";
 }
-function show_ghost(){
-    document.body.style.backgroundColor = "#222f3e"
+function show_ghost(){   
+    animation()
     document.body.style.overflow = "hidden"
     ghost_enable()
 }
 function hidden_ghost(){
+    animation()
     document.body.style.overflow = "auto"
-    ghost_disable()
+    setTimeout(() => {
+        ghost_disable()
+    }, 600);
 }
-
+function animation(){
+    ghost.classList.toggle('off', teste)
+    teste = !teste
+}
 // Portifólio
 let square = document.getElementsByClassName('square')
 
