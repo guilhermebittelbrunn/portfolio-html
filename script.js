@@ -56,6 +56,7 @@ function hidden_square(){
  var menu = document.querySelector('.menu_section')
  var btn = document.querySelector('.toggle')
  var ul = document.getElementById('ul_menu')
+
  btn.addEventListener('click', () =>{
     document.body.style.overflow = show ? "hidden" : "initial"
     menu.classList.toggle('on', show)
@@ -63,6 +64,7 @@ function hidden_square(){
  })
 for (var li = 0; li < ul.children.length; li++){
     ul.children[li].addEventListener('click', () =>{
+        document.body.style.overflow = "initial"
         menu.setAttribute('class', "menu_section")
         show = !show
     })
