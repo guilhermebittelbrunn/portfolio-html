@@ -6,17 +6,15 @@ var ghost_disable = () =>{
     document.body.style.backgroundColor = "whitesmoke"
     main.style.display = "block";
     ghost.style.display = "none";
-    
 }
 var ghost_enable = () =>{
     document.body.style.backgroundColor = "#222f3e"
     main.style.display = "none";
-    ghost.style.display = "block";}
-
-
+    ghost.style.display = "block";
+}
 function show_ghost(){
-    document.body.style.overflow = "hidden"
     document.body.style.backgroundColor = "#222f3e"
+    document.body.style.overflow = "hidden"
     ghost_enable()
 }
 function hidden_ghost(){
@@ -35,15 +33,13 @@ for (var item = 0; item < square.length; item++){
 function show_square(){
    let link = this.children[1]
    link.style.gridRow = '1/3'
-   link.children[0].style.fontSize = "2.6rem"
-   link.children[0].style.marginTop = "30px"
+   link.children[0].style.display = "none"
    link.children[1].style.display = "block"
 }
 function hidden_square(){
     let link = this.children[1]
     link.style.gridRow = '2/3'
-    link.children[0].style.fontSize = "2.0rem"
-    link.children[0].style.marginTop = "0px"
+    link.children[0].style.display = "block"
     link.children[1].style.display = "none"
  }
 
@@ -54,6 +50,7 @@ function hidden_square(){
  var btn = document.querySelector('.toggle')
  var ul = document.getElementById('ul_menu')
  btn.addEventListener('click', () =>{
+    document.body.style.overflow = show ? "hidden" : "initial"
     menu.classList.toggle('on', show)
     show = !show
  })

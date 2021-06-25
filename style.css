@@ -77,18 +77,22 @@ nav a:hover{
 header{
     text-align: center;
     color: var(--second-color);
-    min-height: 500px;
     background-color: var(--first-color);
+
+}
+#content{
+    min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation: surgir .8s ease forwards;
 }
 header h1{
     font-size: 3.2rem;
 }
 #btns{
-    margin-top: 30px;
+    margin-top: 50px;
     display: flex;
     gap: 30px;   
 }
@@ -149,6 +153,9 @@ header h1{
     border-radius: 50%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .45);
 }
+#sobre img:hover{
+    animation: hover 1s linear forwards;
+}
 #text{
     margin-top: 20px;
     padding: 0px 5%;
@@ -203,11 +210,25 @@ header h1{
     grid-row: 2/3;
     font-size: 2.0rem;
 }
+#legenda h3::after, #legenda h3::before{
+    content: ' ^ ';
+    font-size: 2.2rem;
+    color: var(--second-color);
+    position: absolute;
+    bottom: 10px;
+    animation: up 0.8s linear  infinite alternate;
+}
+#legenda h3::after{
+    right: 30px;
+}
+#legenda h3::before{
+    left: 30px;
+}
 .square a{
     width: 60%;
     display: none;
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-decoration: none;
@@ -257,20 +278,21 @@ footer a:hover{
     transition: .4s;
 }
 #ghost{
-    max-width: 500px;
-    animation: show .4s linear forwards;
     display: none;
+    max-width: 500px;
+    animation: show .65s ease alternate;
     z-index: 100;
     position: absolute;
-    top: 50%;
     left: 50%;
+    top: 50%;
     transform: translate(-50%,-50%);
     padding: 30px 20px;
-    width: 80%;
+    width: 90%;
     background-color: #161e27;
     text-align: center;
     border: 2px solid rgb(27, 27, 27);
     transition: all 1s;
+    color: var(--second-color);
 }
 #ghost #button{
     width: 30px;
@@ -335,10 +357,32 @@ footer a:hover{
 
 @keyframes show{
     0%{
+        transform: scale(.5);
         opacity: 0;
     }
+    50%{
+        transform: translate(-50%,-50%) scale(.7)
+    }
     100%{
-        opacity: .95;
+        opacity: 1;
+        transform: translate(-50%,-50%) scale(1)
     }
 }
-
+@keyframes up{
+    to{
+        color: white;
+        padding-bottom: 10px;
+    }
+}
+@keyframes surgir{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.4;
+    }  
+    100%{
+        opacity: 1;
+        transform: translateY(-30px)
+    }
+}
