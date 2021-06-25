@@ -308,12 +308,13 @@ footer a:hover{
     align-items: center;
     color: white;
     font-weight: 700;
-    font-size: 2.6rem;
+    font-size: 3rem;
     position: absolute;
-    right: 2%;
+    right: 3%;
     top: 1%;
 }
 .ghost_header{
+    margin-top: 20px;
     padding: 20px 0px;
     color: white;
     font-size: 2.0rem;

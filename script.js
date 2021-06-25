@@ -1,3 +1,5 @@
+
+
 // Contato menu
 let ghost = document.getElementsByClassName('ghost')[0]
 let main = document.getElementsByTagName('main')[0]
