@@ -20,7 +20,7 @@
     <img src="css/portfólio-mobile2.gif" style="width:15%; margin-left:30px">
     <hr>
     <p>Site anexado na bio do perfil</p>
-    <h3><a href="https://guilhermebittelbrunn.github.io/jogo-da-memoria/"> Clique aqui para ver o site</a></h3>
+    <h3><a href="https://guilhermebittelbrunn.github.io/portfolio-html/"> Clique aqui para ver o site</a></h3>
     <p>Created by: Guilherme Bittelbrunn</p>
 </main>
 
