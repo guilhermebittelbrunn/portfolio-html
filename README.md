@@ -16,8 +16,8 @@
     <img src="css/portfólio.gif" style="width:50%">
     <hr>
     <h2 style="margin-bottom: 20px">Versão para disposivos móveis</h2>
-    <img src="css/portfólio-mobile.gif" style="width:10%">
-    <img src="css/portfólio-mobile2.gif" style="width:10%; margin-left:30px">
+    <img src="css/portfólio-mobile.gif" style="width:15%">
+    <img src="css/portfólio-mobile2.gif" style="width:15%; margin-left:30px">
     <hr>
     <p>Site anexado na bio do perfil</p>
     <h3><a href="https://guilhermebittelbrunn.github.io/jogo-da-memoria/"> Clique aqui para ver o site</a></h3>
