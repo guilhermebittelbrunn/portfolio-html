@@ -15,7 +15,7 @@
     <h2 style="margin-bottom: 20px">Versão para Desktop</h2>
     <img src="css/portfólio.gif" style="width:50%">
     <hr>
-    <h2 style="margin-bottom: 20px">Versão para disposivos móveis</h2>
+    <h2 style="margin-bottom: 20px">Versão para dispositivos móveis</h2>
     <img src="css/portfólio-mobile.gif" style="width:15%">
     <img src="css/portfólio-mobile2.gif" style="width:15%; margin-left:30px">
     <hr>
