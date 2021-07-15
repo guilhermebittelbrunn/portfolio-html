@@ -4,12 +4,12 @@
     <p>Portfólio para uso de divulgação de projetos próprios, referência acadêmica e profissional.</p>
     <h4>Projetos anexados:</h4>
     <ul>
-        <li>Wildlife</li>
-        <li>Login page</li>
-        <li>Jogo da memória</li>
-        <li>Jogo da velha</li>
-        <li>Stopwatch</li>
-        <li>Cartão de visita</li>
+        <li>🐾 Wildlife (landingpage)</li>
+        <li>🚪 Página de login</li>
+        <li>🧠 Jogo da memória</li>
+        <li>#️⃣ Jogo da velha</li>
+        <li>⏱ Cronômetro</li>
+        <li>👦🏻 Cartão de visita</li>
     </ul>
     <hr>
     <h2 style="margin-bottom: 20px">Versão para Desktop</h2>
